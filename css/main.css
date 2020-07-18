@@ -1,0 +1,386 @@
+.body {
+  margin: 0;
+  font-family: "Jura", sans-serif;
+}
+
+.continer {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0)),
+    url("/img/12222.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation {
+  width: 750px;
+  margin-top: 75px;
+  margin-bottom: 95px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Jura", sans-serif;
+}
+
+.photo-wrapper {
+  margin-bottom: 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  overflow: hidden;
+}
+.photo-wrapper {
+  background-color: rgb(155, 155, 155);
+  animation: shadow 1.3s infinite alternate;
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: 0 0 100px 10px rgb(252, 252, 252) 1;
+  }
+  to {
+    box-shadow: 0 0 400px 30px rgb(255, 255, 255);
+  }
+}
+.photo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-text {
+  font-size: 58px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-family: "Jura", sans-serif;
+}
+
+.slogan {
+  margin-bottom: 60px;
+  font-size: 36px;
+  color: rgb(0, 0, 0);
+  font-family: "Jura", sans-serif;
+}
+
+.social-wrapper {
+  height: 100px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  margin: 10px;
+  border-radius: 50%;
+  font-size: 28px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fon {
+  padding-top: 100px;
+  padding-bottom: 165px;
+}
+
+.about-photo {
+  width: 470px;
+}
+.about-photo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-content {
+  width: 570px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.about-title {
+  color: black;
+  font-size: 58px;
+  font-weight: 500;
+  font-family: "Jura", sans-serif;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 22px;
+  line-height: 1.4;
+  font-family: "Jura", sans-serif;
+}
+.about-list {
+  list-style-type: circle;
+  font-family: "Jura", sans-serif;
+}
+
+/* портфолио */
+.section {
+  padding-top: 100px;
+  padding-bottom: 160px;
+  background-color: rgb(80, 80, 80);
+}
+.section-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Jura", sans-serif;
+  margin-bottom: 80px;
+}
+.siction-title {
+  font-size: 58px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+
+.portfolio-item-img {
+  margin-bottom: 40px;
+}
+.portfolio-item-title {
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  font-family: "Jura", sans-serif;
+}
+.portfolio-item-link {
+  color: #00ffff;
+  font-size: 26px;
+  text-decoration: underline;
+  font-family: "Jura", sans-serif;
+}
+.portfolio-item-link:hover {
+  color: darkorange;
+}
+
+/* Форма обратной связи */
+
+.got {
+  background: rgb(0, 0, 0);
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+.content-wrapper {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-size: 62px;
+  text-align: center;
+  justify-content: space-between;
+  font-family: "Jura", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+}
+.form-wrapper {
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 14px;
+  padding: 40px 35px;
+}
+@media (max-width: 768px) {
+  .form-wrapper {
+    padding: 20px 15px;
+  }
+}
+
+.form-group {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Jura", sans-serif;
+}
+.form-label {
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Jura", sans-serif;
+}
+.form-input {
+  padding: 0 0px;
+  height: 52px;
+  width: 100%;
+  background-color: #e3eaea;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Jura", sans-serif;
+  transition: background-color 0.2s ease-in;
+}
+
+.form-input:focus,
+.form-message:focus {
+  outline: none;
+  background-color: #0000005e;
+}
+
+.form-message {
+  width: 100%;
+  height: 170px;
+  background-color: #e3eaea;
+  border-radius: 8px;
+  padding: 15 20px;
+  border: none;
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  resize: vertical;
+}
+.form-submit {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  color: #e3eaea;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(5, 1, 14);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+  font-family: "Jura", sans-serif;
+}
+
+.form-submit:hover,
+.form-submit:focus {
+  background-color: #008888;
+  outline: none;
+}
+
+.form-submit:active {
+  background-color: #068080;
+  outline: none;
+}
+.error {
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  background-color: rgba(233, 18, 18, 0.801);
+  border-radius: 8px;
+
+  color: #e3eaea;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.title-success {
+  color: azure;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn-goback {
+  display: block;
+  width: 100%;
+  height: 52px;
+  padding-top: 15px;
+  border-radius: 18px;
+
+  background-color: #3716ec;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.btn-goback:hover,
+.btn-goback:focus {
+  background-color: #f52c08a9;
+  outline: none;
+}
+
+.btn-goback:active {
+  background-color: #2616afa9;
+  outline: none;
+}
+.foot {
+  width: 100%;
+  height: 65px;
+  background-color: rgb(173, 173, 173);
+  margin: 0;
+}
+.yes {
+  width: 65%;
+  padding-top: 25px;
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+}
+.foterr {
+  width: 85%;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icon1 {
+  width: 45px;
+  height: 45px;
+  background: rgb(255, 255, 255);
+  margin: 10px;
+  border-radius: 50%;
+  font-size: 28px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
